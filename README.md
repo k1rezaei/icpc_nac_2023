@@ -1,4 +1,4 @@
-## UMD Red - ICPC NAX 2023
+## UMD Red - ICPC NAC 2023
 
 *University of Maryand* ICPC NAC 2023 Team Notebook
 
