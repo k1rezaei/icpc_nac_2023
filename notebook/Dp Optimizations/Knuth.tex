@@ -1,0 +1,10 @@
+Knuth Optimization is applicable if $C_{i,j}$ satisfied the following 2 conditions:
+
+1- Quadrangle Inequality: $C_{a,c} + C_{b,d} \leq C_{a,d} + C_{b,c}$ for $a \leq b \leq c \leq d$
+
+2- Monotonicity: $C_{b,c} \leq C_{a,d}$ for $a \leq b \leq c \leq d$
+\\
+\\
+Then if the smallest $k$ that gives optimal answer in $dp_{i,j} = dp_{i-1,k} + C_{k,j}$ equals to $A_{i,j}$ we have:
+$$A_{i,j-1} \leq A_{i,j} \leq A_{i+1,j}$$
+\hline
