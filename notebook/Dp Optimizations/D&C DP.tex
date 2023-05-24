@@ -1,0 +1,9 @@
+For recurrence $dp(i, j) = \underset{0 \leq k \leq j}{\min} dp(i - 1, k - 1) + C(k, j)$
+
+Let $opt(i, j)$ be the value of $k$ minimizing the recurrence
+
+If quadrangle inequality is satisfied, $opt(i, j) \leq opt(i, j + 1)$
+
+So for some $mid$, $j \leq mid \to opt(i, j) \leq opt(i, mid)$
+
+So apply divide-and-conquer - compute $opt(i, mid)$, then use it to bound $opt$ for $j \neq mid$
